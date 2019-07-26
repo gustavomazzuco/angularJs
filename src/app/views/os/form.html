@@ -11,7 +11,7 @@
         <ui-input type="date" ng-model="vm.record.dataSaida" label="Data Saída"> </ui-input>
         <div class="form-group">
           <label>Cliente</label>
-          <select ng-selected="vm.cliente.nome" ng-model="vm.cliente" class="form-control" ng-options="i.nome for i in vm.clientes track by $index"></select>
+          <select ng-selected="vm.cliente.nome" ng-model="vm.cliente" class="form-control" ng-options="i.nome for i in vm.clientes track by i.id"></select>
           </select>
         </div>
         <label>Item</label>

@@ -14,7 +14,7 @@ const ENV = process.env.NODE_ENV = process.env.ENV = 'production';
 
 module.exports = webpackMerge(common.config, {
   output: {
-    filename: '[name].[chunkhash].js',
+    filename: '[name].[hash].js',
     path: path.resolve(__dirname, '../dist')
   },
   module: {
